@@ -19,11 +19,12 @@ const MovieList =()=>{
                     movieState.values.map((movie) => {
                     return (
                     <div key={movie.imdbID} className="">
-                        <div className="p-2 bg-gradient-to-r from-orange-500 to-orange-200 w-36 text-center">
+                        <div className="p-4 bg-gradient-to-tl from-gray-900 to-red-600 w-48 h-auto text-center rounded-md shadow-md">
                         
-                            <img src={movie.Poster} alt="" className=" mx-auto" />
+                            <img src={movie.Poster} alt="" className=" h-60 max-w-full rounded-lg" />
+                         
                             
-                            <b>Title:</b> <span>{movie.Title}</span>
+                            <div className=" text-xs text-gray-100 h-16 flex items-center justify-center tracking-wider">{movie.Title}</div>
                         </div>
                     </div>
                     );

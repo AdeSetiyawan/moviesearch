@@ -14,7 +14,7 @@ function App() {
 
 
     <div className=" container mx-auto">
-      <div className="bg-orange-700 flex justify-between p-4">
+      <div className="bg-orange-700 flex justify-between p-4 rounded-br-xl rounded-bl-xl shadow-md text-white tracking-wider">
         <Header title={title} />
         <Search/>
       </div>

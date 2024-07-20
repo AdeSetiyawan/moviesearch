@@ -16,14 +16,15 @@ const Search =()=>{
     }
 
     return(
-        <div>
+        <div className="flex gap-4">
             <input
                 type="text"
                 value={input}
                 onChange={(e)=>setInput(e.target.value)}
+                className="rounded-xl text-gray-500 p-1 text-xs w-80 ps-4 pe-4 tracking-wider shadow shadow-2xl outline-none"
             />
 
-            <button onClick={handleSearch}>Cari</button>
+            <button onClick={handleSearch} className=" rounded-full text-xs p-2 ps-4 pe-4 bg-gray-900 tracking-widest shadow-md hover:bg-gray-800 active:bg-gray-700">Cari</button>
         </div>
     )
 }
