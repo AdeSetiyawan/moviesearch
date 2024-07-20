@@ -29,9 +29,9 @@ const MovieList =()=>{
                     </div>
                     );
                     })):(
-                    <p>
-                       movie not found
-                    </p>
+                    <div    className=" bg-red-600 text-white rounded-xl p-4 tracking-wider text-xl">
+                       I'am sorry, your favorite movie not found in this catalog
+                    </div>
                     )
             }
         </>
